@@ -6,11 +6,11 @@
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
 
-Please use plain HTML, CSS, and JavaScript.
+Please use plain HTML, CSS, and "vanilla" JavaScript. No frameworks please!
 
 Your users should be able to: 
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size (mobile, tablet, laptop, desktop)
 - See hover states for all interactive elements on the page
 
 ## Where to find everything
