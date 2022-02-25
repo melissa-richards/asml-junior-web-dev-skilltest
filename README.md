@@ -33,3 +33,15 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
 5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
 6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+
+## Showing your work
+
+We want to see how you think about building websites. There is no one correct way. In your follow-up interview, we will ask you to:
+1. Show us your completed work on a GitHub page URL
+2. Present your HTML, CSS, and JavaScript source code to us via a screen share, and explain your approach to each
+3. Tell us something you already knew how to do that was applicable to this test
+4. Tell us something you had to research to learn to complete the test
+5. Show you development and testing environment (code editor, browsers/devices, web developer tools, testing process)
+6. Talk about how you would estimate work like this for a project team, so the PM could plan the overall project
+7. Review any commit messages in your forked repository. Why did you commit at each point? Could another developer read your commit messages and understand them?
+8. Talk to us in general about your interest in a career making websites for clients on a team like Able Sense!
