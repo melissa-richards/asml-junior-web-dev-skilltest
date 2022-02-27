@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- stylesheet link -->
+  <link href="./stylesheet.css" rel="stylesheet">
   <!-- font and icon links -->
   <script src="https://kit.fontawesome.com/0dca288eff.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -14,30 +16,29 @@
   <title>Able Sense Skill Test</title>
 </head>
 <body>
-  <!-- header content -->
+  <!-- begning of header-->
   <header>
-    <nav>
+    <nav class="header-nav wrapper">
       <h1>
-        <img src="./images/logo.svg" alt="Huddle Logo">
+        <img class="blk-logo" src="./images/logo-blk.png" alt="Huddle Logo">
       </h1>
-      <button class="nav-button">
-        <a href="#">Try It Free</a>
-      </button>
+      <a class="nav-button" href="#">Try It Free</a>
     </nav>
-    <div class="frontpage-header-container">
-      <div class="text-header-wrapper">
+    <div class="frontpage-header-container wrapper">
+      <div class="text-header-container">
         <h2>Build The Community Your Fans Will Love</h2>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-        <button class="header-button">
-          <a href="#">Get Started For Free</a>
-        </button>
+        <a href="#">Get Started For Free</a>
       </div>
       <div class="image-header-container">
         <img src="./images/illustration-mockups.svg" alt="example of a mock up desktop and tablet website design">
       </div>
     </div>
   </header>
-  <main>
+  <!-- end of header -->
+
+  <!-- begining of main -->
+  <main class="wrapper">
     <section class="grow-together">
       <div class="text-container">
         <h2>Grow Together</h2>
@@ -70,7 +71,10 @@
       <button><a href="#">Get Started For Free</a></button>
     </div>
   </main>
-  <footer>
+  <!-- end of main  -->
+
+  <!-- begining of footer -->
+  <footer class="wrapper">
     <div class="footer-container">
       <div class="footer-logo">
         <img src="./images/logo.svg" alt="Huddle logo">
@@ -115,5 +119,6 @@
       <p>© Copyright 2022 <span>Huddle</span>. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
