@@ -26,6 +26,25 @@ p {
     font-weight: 400;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+}
+
+i:hover {
+    color: hsl(322, 100%, 66%);
+}
+
+i:focus {
+    color: hsl(322, 100%, 66%);
+}
+
+
 .pink-btn {
     display:inline-block;
     width: 290px;
@@ -82,7 +101,7 @@ header {
 .nav-button {
     width: 220px;
     height: 52px;
-    background: white;
+    background: hsl(0, 0%, 100%);
     border-radius: 25px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -164,6 +183,111 @@ header {
     padding: 5%;
     text-align: center;
     border-radius: 14px;
+    background-color: hsl(0, 0%, 100%);
     box-shadow: 0px 0px 8px -5px hsl(208, 11%, 55%, 0.9);
 }
 
+/* footer section */
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(0, 0%, 100%);
+    height: 60vh;
+}
+
+footer a {
+    color: hsl(0, 0%, 100%);
+}
+
+.white-logo {
+    width: 10rem;
+}
+
+.footer-container{
+    padding-top: 150px;
+}
+
+.footer-text-container {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.footer-text-container p {
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.2rem;
+}
+
+.footer-contact {
+    width: 28%;
+}
+
+.about-icons {
+    width: 2.5rem;
+    padding-right: 20px;
+}
+
+/* created a new div for location icon to line up text */
+
+.location-container{
+    display: flex;
+}
+
+.about-icons-location {
+    width: 2.4rem;
+    padding-top: 15px;
+    padding-right: 23px;
+}
+
+/* footer menu styling */
+
+.footer-menu-container ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 600px;
+}
+
+.footer-menu-container li{
+    padding-bottom: 30px;
+}
+
+.footer-menu-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-menu-container a:focus {
+    text-decoration: underline;
+}
+
+/* social styling */
+.social-container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-icons{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.social-icons li{
+    font-size: 2rem;
+}
+
+/* copyright bar */
+
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copyright p{
+    font-size: .6rem;
+}
