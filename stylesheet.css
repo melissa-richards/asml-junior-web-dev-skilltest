@@ -338,10 +338,10 @@ footer a {
 
 
 /* med lg screen */
-@media (max-width: 1080px) {
+@media (max-width: 1110px) {
 
     .image-header-container {
-        padding-top:10%
+        padding-top:10%;
     }
     
     .image-container{
@@ -358,7 +358,7 @@ footer a {
     } 
 
     footer{
-        height: 110vh;
+        height: 100%;
     }
 
     .white-logo {
@@ -399,7 +399,7 @@ footer a {
 }
 
 /* med screen */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     header {
         height: 100vh;
         background-image: url(./images/bg-hero-mobile.svg);
@@ -484,6 +484,10 @@ footer a {
         font-size: .8rem;
     }
 
+    footer{
+        max-height: 100%;
+    }
+
     .footer-container {
         padding-top: 100px;
     }
@@ -495,18 +499,35 @@ footer a {
 }
 
 /* small screen */
-@media (max-width: 400px) and (min-width: 321px){
-    .header {
-        background-image: url(./images/bg-hero-mobile.svg);
-        height: 83vh;
+@media (max-width: 400px){
+    h2 {
+        font-size: 23px;
     }
+
+    header {
+        background-image: url(./images/bg-hero-mobile.svg);
+        max-height: 100%;
+        background-size: contain;
+    }
+
+    .text-header-container h2 {
+        line-height: 40px;
+    }
+
     .text-header-container p{
         margin-bottom: 40px;
     }
+
     .text-header-container .primary-btn a{
         margin: 0 auto;
         padding: 13px;
         width: 233px;
         font-size: 13px;
     }
+
+    .image-header-container {
+        width: 100%;
+    }
+
+
 }
