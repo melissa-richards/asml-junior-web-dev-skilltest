@@ -7,9 +7,22 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* colors and fonts */
+/* 
+- Pink: hsl(322, 100%, 66%)
+- White: hsl(193, 100%, 96%)
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%) 
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700*/
+
 /* general styles */
 body {
     margin: 0;
+    font-size: 18px;
 }
 
 img {
@@ -36,13 +49,18 @@ a {
     font-weight: 400;
 }
 
+span {
+    font-weight: 700;
+}
+
+/* a wrapper to contain the website and control overflow */
 .wrapper {
     margin:0 auto;
     width: 85%;
     max-width: 1440px;
 }
 
- /* button styles - colours changed for accessibility contrast */
+ /* button styles - colours changed for accessibility contrast. primary button is used more than once on the page */
 
 .primary-btn a{
     display: block;
@@ -72,6 +90,7 @@ a {
     background-color: hsl(190, 96%, 52%);
     color: hsl(192, 83%, 11%);
     box-shadow: 1px 1px 1px 1px hsl(192, 83%, 11%);
+    transition: 0.6s ease;
 }
 
 .primary-btn a:focus {
@@ -100,6 +119,7 @@ a {
     background-color: hsl(190, 96%, 52%);
     color: hsl(192, 83%, 11%);
     box-shadow: 1px 1px 1px 1px hsl(192, 83%, 11%);
+    transition: 0.6s ease;
 }
 
 .secondary-btn:focus {
@@ -107,7 +127,8 @@ a {
     color: hsl(192, 83%, 11%);
     box-shadow: 1px 1px 1px 1px hsl(192, 83%, 11%);
 }
-/* header styles */
+
+/* header styles - header serves as landing page*/
 header {
     height: 90vh;
     width: 100%;
@@ -262,6 +283,10 @@ footer a {
     min-width: 189px;
 }
 
+.footer-menu-container {
+    font-size: 16px;
+}
+
 .footer-menu-container ul {
     display: flex;
     flex-direction: column;
@@ -318,6 +343,7 @@ footer a {
 .social-icons a:hover {
     color: hsl(322, 100%, 66%);
     border: 1px solid hsl(322, 100%, 66%);
+    transition: 0.3s ease;
 }
 
 .social-icons a:focus {
@@ -465,6 +491,7 @@ footer a {
         text-align: center;
     }
 
+    /* this is to target the second card in the main section to reverse the order of its content */
     .card:nth-child(2){
         flex-direction: column;
     }
@@ -474,7 +501,7 @@ footer a {
     }
 
     .get-started-feature h2{
-        font-size: 1.05rem;
+        font-size: 1.3rem;
         margin-bottom: 20px;
     }
 
@@ -498,7 +525,7 @@ footer a {
     }
 }
 
-/* small screen */
+/* small screen including the given screen size of 375px and 320 for the smallest iphone */
 @media (max-width: 400px){
     h2 {
         font-size: 23px;
@@ -529,5 +556,8 @@ footer a {
         width: 100%;
     }
 
+    .get-started-feature h2{
+        font-size: 1.08rem;
+    }
 
 }
