@@ -35,24 +35,17 @@ a {
     font-family: 'Open sans', sans-serif;
     font-weight: 400;
 }
+
+.wrapper {
+    margin:0 auto;
+    width: 85%;
+    max-width: 1440px;
+}
+
  /* button styles - colours changed for accessibility contrast */
 
-/* .pink-btn {
-    display:inline-block;
-    width: 290px;
-    height: 56px;
-    border-radius: 28px;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    background-color: hsl(322, 100%, 66%);
-    color:hsl(0, 0%, 100%);
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 18px;
-} */
-
-.pink-btn {
+.primary-btn a{
+    display: block;
     width: 100%;
     min-width: 95px;
     max-width: 300px;
@@ -62,36 +55,32 @@ a {
     margin-top: 40px;
     padding: 20px;
     text-align: center;
-}
-
-.pink-btn a{
+    box-shadow: 1px 4px 7px 3px hsla(208, 11%, 55%, 0.2);
     color:hsl(0, 0%, 100%);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 
-.get-started-feature .pink-btn {
+.get-started-feature .primary-btn a{
     max-width: 350px;
     padding: 25px;
     border-radius: 40px;
     margin: 0 auto;
 }
 
-.pink-btn:hover {
+.primary-btn a:hover {
     background-color: hsl(190, 96%, 52%);
     color: hsl(192, 83%, 11%);
     box-shadow: 1px 1px 1px 1px hsl(192, 83%, 11%);
 }
 
-.pink-btn:focus {
+.primary-btn a:focus {
     background-color: hsl(190, 96%, 52%);
     color: hsl(192, 83%, 11%);
     box-shadow: 1px 1px 1px 1px hsl(192, 83%, 11%);
 }
 
-
-
-.nav-button {
+.secondary-btn {
     width: 16em;
     height: 52px;
     background: hsl(0, 0%, 100%);
@@ -107,12 +96,16 @@ a {
     box-shadow: 1px 0px 10px -5px;
 }
 
-.nav-button:hover {
-    color: hsl(192, 100%, 9%, 0.60);
+.secondary-btn:hover {
+    background-color: hsl(190, 96%, 52%);
+    color: hsl(192, 83%, 11%);
+    box-shadow: 1px 1px 1px 1px hsl(192, 83%, 11%);
 }
 
-.nav-button:focus {
-    color: hsl(192, 100%, 9%, 0.60);
+.secondary-btn:focus {
+    background-color: hsl(190, 96%, 52%);
+    color: hsl(192, 83%, 11%);
+    box-shadow: 1px 1px 1px 1px hsl(192, 83%, 11%);
 }
 /* header styles */
 header {
@@ -126,11 +119,6 @@ header {
     background-position: center;
 }
 
-.wrapper {
-    margin:0 auto;
-    width: 85%;
-    max-width: 1440px;
-}
 
 .header-nav {
     display: flex;
@@ -149,25 +137,25 @@ header {
 }
 
 .text-header-container {
-    width: 45%;
+    width: 50%;
     padding-top: 30px;
 }
 
 .text-header-container h2 {
     padding-right: 50px;
     font-size: clamp(1.3rem, 4vw, 2.8rem);
-    line-height:  clamp(.08rem, 5vw, 4rem);
+    line-height:  clamp(.08rem, 4vw, 4rem);
 }
 
 .text-header-container p {
     padding-right: 100px;
-    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
     color: hsl(192, 100%, 9%);
-    line-height: clamp(0.8rem, 3vw, 1.2rem);
+    line-height: clamp(0.8rem, 4vw, 1.5rem);
 }
 
 .image-header-container {
-    width: 55%
+    width: 50%
 }
 
 /* main section */
@@ -181,7 +169,7 @@ header {
 
 .card p {
     color:hsl(208, 11%, 55%);
-    line-height: 1em;
+    line-height: 1.5em;
 }
 
 .text-container {
@@ -220,7 +208,7 @@ header {
 footer {
     background-color: hsl(192, 100%, 9%);
     color: hsl(0, 0%, 100%);
-    /* height: 60vh; */
+    height: 70vh;
 }
 
 footer a {
@@ -232,7 +220,7 @@ footer a {
 }
 
 .footer-container{
-    padding-top: 150px;
+    padding-top: 233px;
 }
 
 .footer-text-container {
@@ -242,7 +230,7 @@ footer a {
     justify-content: space-between;
 }
 
-.footer-text-container p {
+.footer-contact p {
     font-size: 0.8rem;
     letter-spacing: 0.05rem;
     line-height: 1.2rem;
@@ -295,6 +283,7 @@ footer a {
     text-decoration: underline;
 }
 
+
 /* social styling */
 .social-container {
     width: 300px;
@@ -305,8 +294,14 @@ footer a {
 
 .social-icons {
     display: flex;
-    width: 200px;
+    width: 160px;
     justify-content: space-between;
+    padding: 0;
+}
+
+.social-icons ul {
+    margin: 0;
+    padding: 0;
 }
 
 .social-icons a{
@@ -316,7 +311,7 @@ footer a {
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 25px;
     font-size: 1.2rem;
-    padding-top: 4px;
+    padding-top: 5px;
     text-align: center;
 }
 
@@ -332,109 +327,42 @@ footer a {
 
 
 /* copyright bar */
-
-.copyright {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .copyright p {
+    width: 300px;
     font-size: .6rem;
     padding-top: 20px;
 }
 
+
 /* media queries start here */
 
 
-@media (max-width: 700px) {
-    .wrapper{
-        width: 90%;
-    }
-
-    .header-nav {
-        padding-top: 0px;
-    }
-
-    .blk-logo {
-        width: 3em;
-    }
-
-    .nav-button{
-        width: 35%;
-        height: 28px;
-        margin-top: 28px;
-        padding-top: 5px;
-        font-size: 13px;
-    }
-
-    .frontpage-header-container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        width: 75%;
-        padding-top: 0px;
-    }
-
-    .text-header-container {
-        width: 100%;
-    }
-
-    .text-header-container h2{
-        padding-right: 0px;
-        font-size: 2rem;
-        line-height: 35px;
-    }
-    
-    .text-header-container p {
-        padding: 0px 5px 0px 5px;
-        line-height: 20px;
-        margin-bottom: 50px;
-    }
-
-    .text-header-container .pink-btn {
-        margin: 0 auto;
-    }
+/* med lg screen */
+@media (max-width: 1080px) {
 
     .image-header-container {
-        width: 100%;
-        padding-top: 50px;
+        padding-top:10%
     }
-
-    .card {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .card:nth-child(2){
-        flex-direction: column;
-    }
-
-    .get-started-feature {
-        left: 0;
-        width: 100%;
-    }
-
-}
-
-
-
-@media (max-width: 1080px) {
     
     .image-container{
         padding-top: 15%;
     }
     .get-started {
-    position: relative;
+        position: relative;
+        
     }
 
     .get-started-feature {
-        left: 11%;
-        width: 500px;
-    }
+        left: 0;
+        width: 100%;
+    } 
 
     footer{
-        height: 100vh;
+        height: 110vh;
+    }
+
+    .white-logo {
+        margin-top: 50px;
     }
 
     .footer-contact {
@@ -452,7 +380,6 @@ footer a {
     .footer-text-container ul{
         flex-wrap: nowrap;
         height: 100%;
-        width: 100%;
         margin-top: 50px;
         padding-left: 0px;
         margin-left: 0;
@@ -461,11 +388,125 @@ footer a {
     .social-container{
         width: 150px;
         text-align: center;
+        align-items: center;
         justify-content: space-around;
     }
 
     .copyright{
         text-align: center;
         justify-content: space-around;
+    }
+}
+
+/* med screen */
+@media (max-width: 700px) {
+    header {
+        height: 100vh;
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+
+    .header-nav {
+        padding-top: 0px;
+    }
+
+    .blk-logo {
+        width: 3em;
+    }
+
+    .secondary-btn{
+        width: 35%;
+        height: 28px;
+        margin-top: 28px;
+        padding-top: 5px;
+        font-size: 13px;
+    }
+
+    .frontpage-header-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 85%;
+        padding-top: 0px;
+    }
+
+    .text-header-container {
+        width: 100%;
+    }
+
+    .text-header-container h2{
+        padding-right: 0px;
+        font-size: clamp(15px, 7vw, 40px);
+        line-height: 35px;
+    }
+    
+    .text-header-container p {
+        padding: 0px 5px 0px 5px;
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 50px;
+    }
+
+    .text-header-container .primary-btn a{
+        margin: 0 auto;
+    }
+
+    .image-header-container {
+        width: 110%;
+        padding-top: 50px;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .card:nth-child(2){
+        flex-direction: column;
+    }
+
+    .get-started-feature{
+        padding: 40px 0px 40px 0px;
+    }
+
+    .get-started-feature h2{
+        font-size: 1.05rem;
+        margin-bottom: 20px;
+    }
+
+    .get-started-feature .primary-btn a{
+        width: 70%;
+        padding: 15px;
+        font-size: .8rem;
+    }
+
+    .footer-container {
+        padding-top: 100px;
+    }
+
+    .footer-logo {
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+}
+
+/* small screen */
+@media (max-width: 400px) and (min-width: 321px){
+    .header {
+        background-image: url(./images/bg-hero-mobile.svg);
+        height: 83vh;
+    }
+    .text-header-container p{
+        margin-bottom: 40px;
+    }
+    .text-header-container .primary-btn a{
+        margin: 0 auto;
+        padding: 13px;
+        width: 233px;
+        font-size: 13px;
     }
 }
